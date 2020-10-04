@@ -44,7 +44,8 @@ def main():
         logRow.to_csv(
             './tempData.tsv',
             sep='\t',
-            header=['date', 'time', 'tempAvg', 'tempSD', 'humAvg', 'humSD'],
+            # header=['date', 'time', 'tempAvg', 'tempSD', 'humAvg', 'humSD'],
+            header=False,
             columns=['date', 'time', 'tempAvg', 'tempSD', 'humAvg', 'humSD'],
             index=False,
             mode='a',
